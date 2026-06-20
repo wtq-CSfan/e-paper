@@ -1,0 +1,13 @@
+{
+    "name": "电子便利贴",
+    "short_name": "便利贴",
+    "start_url": ".",
+    "display": "standalone",
+    "background_color": "#f5f5f5",
+    "theme_color": "#007aff",
+    "icons": [{
+        "src": "icon.png",
+        "sizes": "192x192",
+        "type": "image/png"
+    }]
+}

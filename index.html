@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>电子便利贴</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="便利贴">
+</head>
+<body>
+    <div class="container">
+        <h1>📋 电子便利贴</h1>
+        <p id="status">未连接</p>
+        <button id="connectBtn">连接 Pico</button>
+
+        <div id="todoSection" style="display:none;">
+            <p>输入待办（最多6条）：</p>
+            <div id="todos">
+                <input type="text" class="todo-input" placeholder="1. 待办事项">
+                <input type="text" class="todo-input" placeholder="2. 待办事项">
+                <input type="text" class="todo-input" placeholder="3. 待办事项">
+                <input type="text" class="todo-input" placeholder="4. 待办事项">
+                <input type="text" class="todo-input" placeholder="5. 待办事项">
+                <input type="text" class="todo-input" placeholder="6. 待办事项">
+            </div>
+            <button id="sendBtn">📟 推送到墨水屏</button>
+            <p id="result"></p>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
